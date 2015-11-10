@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     </head>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400italic' rel='stylesheet' type='text/css'>
   <body>
     <header>
       <h1>Choose the coolest car!</h1>
@@ -22,7 +24,16 @@
   <footer>
     Hope you enjoyed playing!
   </footer>
+
     <script src = "app.js" type="text/javascript"></script>
+    <script src="Chart.js"></script>
+
+    <canvas id="cars" width="600" height="400"></canvas>
+    <script type="text/javascript">
+      var context = document.getElementById('imgs').getContext('2d');
+      var skillsChart = new Chart(context).imgs(imgs_count);
+    </script>
+
 
   </body>
 </html>
